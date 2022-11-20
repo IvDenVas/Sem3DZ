@@ -7,7 +7,7 @@ int y2 = userinput("Введите координату Y точки B: ");
 int z2 = userinput("Введите координату Z точки B: ");
 
 double res = DisPoint (x1, y1, x2, y2, z1, z2);
-Console.Write(res);
+Console.Write($"A ({x1},{y1},{z1});B ({x2},{y2},{z2}) -> {res}");
 static double DisPoint (int x1, int y1, int x2, int y2, int z1, int z2)
 {
     return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
